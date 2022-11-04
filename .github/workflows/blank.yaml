@@ -31,10 +31,15 @@ jobs:
       #   with:
       #     apiKey: ${{ secrets.NEW_RELIC_API_KEY }}
       #     accountId: ${{ secrets.NEW_RELIC_ACCOUNT_ID }}
-      - name: check drift and report on newrelic
-        uses: maathor/driftctl-newrelic-action@main
+
+      # - name: check drift and report on newrelic
+      #   uses: maathor/driftctl-newrelic-action@main
+      #   with:
+      #     new_relic_licence_key: ${{ secrets.NEW_RELIC_LICENCE_KEY }}
+      - name: Terraform Monitoring
+        uses: maathor/terraform-new-relic-event-action@master
         with:
-          new_relic_licence_key: ${{ secrets.NEW_RELIC_LICENCE_KEY }}
+          new_relic_licence_key: ${{ secrets.NEW_RELIC_API_KEY}}
 
       - name: Terraform Init
         id: init
