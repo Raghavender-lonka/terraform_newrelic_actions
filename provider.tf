@@ -9,7 +9,7 @@ terraform {
 }
 
 provider "newrelic" {
-  account_id = 3627436  # Your New Relic accNRAK-KAA0NS59T13Eount ID
-  api_key = "NRAK-JC08DMMZR3IF1DYMELC1KWEM571" # Your New Relic user key
+#   account_id = 3627436  # Your New Relic accNRAK-KAA0NS59T13Eount ID
+#   api_key = "NRAK-JC08DMMZR3IF1DYMELC1KWEM571" # Your New Relic user key
   region  = "US"        # US or EU (defaults to US)
 }
