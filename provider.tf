@@ -15,5 +15,3 @@ provider "newrelic" {
   api_key = var.api_key # Your New Relic user key
   region  = "US"        # US or EU (defaults to US)
 }
-
-# terraform plan -var="account_id=3627436" -var="api_key='NRAK-JC08DMMZR3IF1DYMELC1KWEM571'"
