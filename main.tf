@@ -39,4 +39,4 @@ resource "newrelic_nrql_alert_condition" "test_alert" {
   }
 
 }
-
+# 
