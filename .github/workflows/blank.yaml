@@ -37,5 +37,5 @@ jobs:
       - name: Terraform Apply
         run: terraform apply -var="account_id=${{ secrets.NEW_RELIC_ACCOUNT_ID }}" -var="api_key=${{ secrets.NEW_RELIC_API_KEY }}" -auto-approve
 
-      - name: Terraform Destroy
-        run: terraform destroy -var="account_id=${{ secrets.NEW_RELIC_ACCOUNT_ID }}" -var="api_key=${{ secrets.NEW_RELIC_API_KEY }}" -auto-approve
+#       - name: Terraform Destroy
+#         run: terraform destroy -var="account_id=${{ secrets.NEW_RELIC_ACCOUNT_ID }}" -var="api_key=${{ secrets.NEW_RELIC_API_KEY }}" -auto-approve
